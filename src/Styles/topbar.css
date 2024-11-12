@@ -1,0 +1,15 @@
+.topbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 1rem;
+}
+
+.topbar .content h1{
+    margin: 0 1rem;
+    font-weight: bold;
+    font-size: x-large;   
+}
+
+

@@ -1,0 +1,53 @@
+.courses{
+    margin-top: -80rem;
+    margin-left: 20rem;
+    text-align: center;
+}
+
+.courses h1{
+    font-size:xx-large;
+    font-weight: bold;
+    text-align: left;
+}
+
+.courses h2{
+    font-size:larger;
+    text-align: left; 
+    margin-bottom: 3rem;
+}
+
+.courses .table{
+    background-color: white;
+    width: 80vw;
+    border-radius: 10px;
+    padding-left: 3rem;
+}
+
+.courses .table .top{
+    display:flex;
+    padding-top: 3rem;
+    padding-right: 2rem;
+}
+
+.courses .table .top h2{
+    font-size:x-large;
+    font-weight: bold;
+    padding: 1rem;
+    margin-right: 55rem;
+}
+
+.courses .table .top button{
+    background-color: rgba(76, 132, 123, 1);
+    color: white;
+    border-radius: 3px;
+    width: 15rem;
+    height: 3rem;
+}
+
+.courses .table tr td{
+    padding: 0 4rem 1rem 4rem;
+}
+
+.courses .table tr:nth-child(2n){
+    background-color:rgb(235, 235, 235);
+}
