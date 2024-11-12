@@ -8,7 +8,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 interface Course {
   id: string;
-  name: string;
+  name: string; 
   air_date: string;
   status: "In Progress" | "Completed";
 }
