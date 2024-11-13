@@ -1,7 +1,8 @@
 import React from "react";
-import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import MenuItemLink from "./sidebar-content";
 
 const Sidebars: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Sidebars: React.FC = () => {
           color: "white",
           marginTop: "-7rem",
           paddingTop: "3rem",
-          position:"static"
+          position: "static",
         }}
       >
         <Menu style={{ backgroundColor: "#1D3A4C", height: "85rem" }}>
@@ -21,54 +22,20 @@ const Sidebars: React.FC = () => {
             src="./src/assets/Group.png"
             style={{ width: "7rem", marginBottom: "3rem", marginLeft: "4rem" }}
           />
-          <MenuItem component={<Link to="/home" />} style={{ marginBottom: "1rem"}}>
-            <i
-              className="fa-solid fa-table-cells-large"
-              style={{ marginRight: "2rem"}}
-            ></i>
-            Dashboard{" "}
-          </MenuItem>
-         
-          <MenuItem component={<Link to="/courses" />}  style={{ marginBottom: "1rem"}}>
-            <i
-              className="fa-regular fa-file"
-              style={{ marginRight: "3.5rem" }}
-            ></i>
-            Courses{" "}
-          </MenuItem>
-          <MenuItem component={<Link to="/home" />}  style={{ marginBottom: "1rem"}}>
-            <i className="fa-solid fa-user" style={{ marginRight: "3rem" }}></i>
-            My Profile
-          </MenuItem>
-          <MenuItem component={<Link to="/home" />}  style={{ marginBottom: "1rem"}}>
-            <i
-              className="fa-solid fa-pen-to-square"
-              style={{ marginRight: "5rem" }}
-            ></i>
-            Notes
-          </MenuItem>
-          <MenuItem component={<Link to="/home" />}  style={{ marginBottom: "1rem"}}>
-            <i
-              className="fa-solid fa-address-book"
-              style={{ marginRight: "6rem" }}
-            ></i>
-            Kids
-          </MenuItem>
-          <MenuItem component={<Link to="/home" />}  style={{ marginBottom: "1rem"}}>
-            <i
-              className="fa-regular fa-comment-dots"
-              style={{ marginRight: "6rem" }}
-            ></i>
-            Chat
-          </MenuItem>
-          <MenuItem component={<Link to="/home" />}  style={{ marginBottom: "1rem"}}>
-            <i
-              className="fa-regular fa-calendar"
-              style={{ marginRight: "4rem" }}
-            ></i>
-            Calendar
-          </MenuItem>
-      
+          <MenuItemLink to="/home" icon="fa-solid fa-table-cells-large" label="Dashboard" />
+
+          <MenuItemLink to="/courses" icon="fa-regular fa-file" label="Courses" />
+
+          <MenuItemLink to="/home" icon="fa-solid fa-user" label="My Profile" />
+          
+          <MenuItemLink to="/home" icon="fa-solid fa-pen-to-square" label="Notes" />
+          
+          <MenuItemLink to="/home" icon="fa-solid fa-address-book" label="Kids" />
+          
+          <MenuItemLink to="/home"  icon="fa-regular fa-comment-dots" label="Chat" />
+          
+          <MenuItemLink to="/home" icon="fa-regular fa-calendar" label="Calendar" />
+
           <Link to="/">
             <button
               style={{
@@ -90,7 +57,6 @@ const Sidebars: React.FC = () => {
           </Link>
         </Menu>
       </Sidebar>
-      ;
     </>
   );
 };

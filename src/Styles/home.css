@@ -1,5 +1,7 @@
 .all{
   display:flex;
+  margin-top: -83rem;
+  margin-left: 17rem;
 }
 
 .grid{

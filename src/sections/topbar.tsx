@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/topbar.css"
+import Sidebars from "./sidebar";
 
 const Topbar:React.FC = () =>{
     return (
@@ -11,6 +12,7 @@ const Topbar:React.FC = () =>{
                 <img src="./src/assets/anime-moon-landscape.jpg" style={{width:'5rem',borderRadius:'5rem'}}/>
             </div>
         </div>
+        <Sidebars/>
         </>
     )
 }

@@ -1,8 +1,6 @@
 // courses.tsx
 import React, { useEffect, useState } from "react";
 import { fetchCourses } from "../api";
-import Topbar from "../sections/topbar";
-import Sidebars from "../sections/sidebar";
 import "../Styles/courses.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -18,7 +16,7 @@ const Courses: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const loadcourses = async () => {
+    const loadCourses = async () => {
       try {
         const data = await fetchCourses();
         setcourses(
@@ -32,7 +30,7 @@ const Courses: React.FC = () => {
       }
     };
 
-    loadcourses();
+    loadCourses();
   }, []);
 
   if (error) return <p>{error}</p>;
@@ -57,8 +55,6 @@ const Courses: React.FC = () => {
 
   return (
     <>
-      <Topbar />
-      <Sidebars />
       <div className="courses">
         <h1>Courses</h1>
         <h2>

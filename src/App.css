@@ -82,3 +82,7 @@ input::placeholder {
   color: white;
   font-size: larger;
 }
+
+.form p{
+  text-align: end;
+}

@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Stack, Box, Heading, Button,Grid } from "@chakra-ui/react";
-import Sidebars from '../sections/sidebar';
 import '../Styles/home.css'
-import Topbar from '../sections/topbar';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -56,9 +54,7 @@ const Home: React.FC = () => {
   ]
   return (
   <>
-    <Topbar/>
     <div className='all'>
-      <Sidebars />
       <div className="grid">
         <h1>Home</h1>
         <div className="boxes">
