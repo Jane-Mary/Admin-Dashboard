@@ -58,38 +58,39 @@ const Home: React.FC = () => {
       <div className="grid">
         <h1>Home</h1>
         <div className="boxes">
-        <Grid templateColumns="repeat(3, 1fr)" gap={6} p={4}>
+        <Grid templateColumns="repeat(3, 1fr)" gap={8} p={4}>
           {cardData.map((card, index) => (
             <Box
               key={index}
-              width="25rem"
-              height="20.5rem"
+              width="100%"
+              height="100%"
               borderRadius="md"
               boxShadow="lg"
-              p={5}
+              padding = "1rem 0 0 1rem"
               background="#1D3A4C"
               color="white"
             >
               <Stack>
-                <img src="./src/assets/Vector.png" style={{ width: '3rem' }} />
-                <Heading textAlign="left" fontSize="xx-large" fontWeight='bold' pb={4}>
+                <img src="./src/assets/Vector.png" style={{ width: '10%',paddingTop:'1rem'}} />
+                <Heading textAlign="left" fontSize="xxx-large" fontWeight='bolder' paddingTop='1rem' pb={4}>
                   {card.title}
                 </Heading>
                 <Button
                   variant="outline"
                   backgroundColor="#E2DDBF"
                   color="#4C847B"
-                  fontSize="larger"
-                  width="13rem"
+                  fontSize="x-large"
+                  width="60%"
                   padding='1.5rem'
                   fontWeight='bold'
+                  marginTop= "1rem"
                 >
                   <i className="fa-solid fa-up-right-from-square"></i>
                   {card.button}
                 </Button>
                 <img
                   src="./src/assets/Vector 2.png"
-                  style={{ width: '20rem', marginLeft: '4rem', marginTop: '-4.3rem' }}
+                  style={{ width: 'inherit', marginLeft: '4rem', marginTop: '-6rem' }}
                 />
               </Stack>
             </Box>

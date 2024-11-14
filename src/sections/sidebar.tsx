@@ -14,10 +14,9 @@ const Sidebars: React.FC = () => {
           color: "white",
           marginTop: "-7rem",
           paddingTop: "3rem",
-          position: "static",
         }}
       >
-        <Menu style={{ backgroundColor: "#1D3A4C", height: "85rem" }}>
+        <Menu style={{ backgroundColor: "#1D3A4C", height: "90rem" }}>
           <img
             src="./src/assets/Group.png"
             style={{ width: "7rem", marginBottom: "3rem", marginLeft: "4rem" }}
