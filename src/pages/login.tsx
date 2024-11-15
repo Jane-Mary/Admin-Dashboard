@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../Styles/login.css"
 
 const Login: React.FC = () => {
   const [username, setUsername] = useState<string>("");
@@ -47,7 +48,7 @@ const Login: React.FC = () => {
               Remember Password
             </label>
             <span>
-              Forgot Password <a href="#">Click Here</a>{" "}
+              Forgot Password? <a href="#">Click Here</a>{" "}
             </span>
           </div>
           <button onClick={handleLogin}>Login</button>
